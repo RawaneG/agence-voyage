@@ -1,0 +1,105 @@
+<section class="d-flex align-items-center justify-content-center">
+  <form class="content d-flex">
+    <div
+      class="left-side d-flex flex-column align-items-center justify-content-evenly"
+    >
+      <fieldset
+        class="form-group border p-3 info-etudiant d-flex justify-content-evenly align-items-center"
+      >
+        <legend class="w-auto px-2">Information Etudiant</legend>
+        <div class="first-layer">
+          <label for="">Prénom</label>
+          <input
+            type="text"
+            class="p-2 my-2"
+            placeholder="Entrez votre prénom"
+          />
+          <label for="">Nom</label>
+          <input type="text" class="p-2 my-2" placeholder="Entrez votre nom" />
+        </div>
+        <div class="second-layer">
+          <label for="">Date de naissance</label>
+          <input type="date" class="p-2 my-2" />
+          <label for="">Niveau d'étude</label>
+          <select class="p-2 my-2">
+            <option value="">Sélectionner une option</option>
+            <option value="">Baccaulauréat</option>
+            <option value="">Licence</option>
+            <option value="">Master</option>
+            <option value="">Doctorat</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset
+        class="form-group border p-3 info-etudiant2 d-flex flex-column justify-content-center align-items-center"
+      >
+        <legend class="w-auto px-2">Information Demande</legend>
+        <div class="first-layer">
+          <label for="">Etablissement</label>
+          <input
+            type="text"
+            class="p-2 my-2"
+            placeholder="Entrez votre établissement"
+          />
+          <label for="">Filière</label>
+          <input
+            type="text"
+            class="p-2 my-2"
+            placeholder="Entrez votre filière"
+          />
+        </div>
+        <div class="second-layer">
+          <label for="">Niveau d'étude</label>
+          <select class="p-2 my-2">
+            <option value="">Sélectionner une option</option>
+            <option value="">Baccaulauréat</option>
+            <option value="">Licence</option>
+            <option value="">Master</option>
+            <option value="">Doctorat</option>
+          </select>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="right-side d-flex flex-column align-items-center justify-content-evenly"
+    >
+      <fieldset
+        class="form-group border p-3 documents d-flex flex-column justify-content-evenly align-items-center"
+      >
+        <legend class="w-auto px-2">Documents</legend>
+        <div
+          class="new-doc p-3 d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-plus mx-2"></i>
+          <span>Ajouter un document</span>
+        </div>
+        <div class="doc-added p-2">
+          <i class="far fa-eye" title="Voir"></i>
+          <span>Document</span>
+          <i class="fas fa-trash" title="Supprimer"></i>
+        </div>
+      </fieldset>
+      <fieldset
+        class="form-group border p-3 info-paiement d-flex flex-column justify-content-evenly align-items-center"
+      >
+        <legend class="w-auto px-2">Informations de paiement</legend>
+        <div
+          class="montant d-flex flex-column justify-content-center align-items-center"
+        >
+          <label for="">Montant</label>
+          <input type="text" class="p-2 my-2" />
+        </div>
+      </fieldset>
+      <div
+        class="envoi d-flex justify-content-center align-items-center text-center"
+      >
+        <input
+          routerLink="../../account-verified"
+          type="button"
+          class="py-3 px-5"
+          value="Soumettre"
+        />
+      </div>
+    </div>
+  </form>
+</section>

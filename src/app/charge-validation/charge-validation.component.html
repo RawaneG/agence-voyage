@@ -1,0 +1,87 @@
+<section class="d-flex align-items-center justify-content-center">
+  <div class="content d-flex">
+    <!-- NavBar -->
+    <div class="navbar">
+      <div
+        class="profile_info d-flex flex-column align-items-center justify-content-evenly"
+      >
+        <img
+          src="https://wallpapers.com/images/featured/4co57dtwk64fb7lv.jpg"
+          alt="profile_picture"
+        />
+        <h5>Baila Wane</h5>
+      </div>
+      <div
+        class="links d-flex flex-column align-items-center justify-content-evenly"
+      >
+        <a href="">
+          <span class="link-mail mx-2">Boite de réception</span>
+          <i class="far fa-bell">(0)</i>
+        </a>
+        <a routerLink="../account-validated" href="">Dossier</a>
+        <a href="../charge-validation">Admission</a>
+        <a href="">Visa</a>
+        <a href="" routerLink="../login">Déconnexion</a>
+      </div>
+    </div>
+    <div class="account">
+      <mat-icon class="menu">menu</mat-icon>
+      <div class="first-part">
+        <div class="mail p-5 d-flex justify-content-evenly">
+          <div>
+            <span>Demande d'admission</span>
+          </div>
+          <div>
+            <span class="mx-2">Boite de réception</span>
+            <i class="far fa-bell">(0)</i>
+          </div>
+        </div>
+      </div>
+      <div class="second-part d-flex justify-content-evenly">
+        <div class="status d-flex align-items-center justify-content-center">
+          <span class="mx-5">Statut</span>
+          <select class="p-2">
+            <option>Selectionner un statut</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="periode d-flex justify-content-evenly align-items-center">
+          <div>
+            <div>Du</div>
+            <input type="date" class="p-2" />
+          </div>
+          <div>
+            <div>Au</div>
+            <input type="date" class="p-2" />
+          </div>
+          <button class="filtrer">Filtrer</button>
+        </div>
+      </div>
+      <div class="third-part m-5">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Ecole</th>
+              <th scope="col">Statut</th>
+              <th scope="col">Document</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sow</td>
+              <td>Rawane</td>
+              <td>Université Cheikh Anta Diop</td>
+              <td>En attente</td>
+              <td>
+                <a href="">Voir</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

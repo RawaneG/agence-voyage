@@ -1,0 +1,75 @@
+input,
+.right-side,
+.passContainer
+{
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    backdrop-filter: blur(20px);
+}
+.passContainer
+{
+    border-radius: 10px;
+}
+.pass
+{
+    border: none;
+    background: none;
+    backdrop-filter: none;
+}
+input
+{
+    outline: none;
+    border-radius: 10px;
+}
+.right-side
+{
+    height: 90%;
+    width: 35%;
+}
+.password
+{
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .right-side
+    {
+        width: 60%;
+    }
+    .validation
+    {
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .right-side
+    {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .right-side
+    {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .right-side
+    {
+        height: 100%;
+    }
+    .validation
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        input
+        {
+            margin: 10px auto;
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .inputs input,.passContainer
+    {
+        width: 90%!important;
+    }
+}

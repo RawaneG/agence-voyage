@@ -1,0 +1,227 @@
+    // Conteneur global
+    .content
+    {
+        background-color: rgba(255, 255, 255, 0.074);
+        border: 1px solid rgba(255, 255, 255, 0.222);
+        backdrop-filter: blur(20px);
+        height: 97%;
+        width: 95%;
+        // NavBar et Compte etudiant
+        .navbar,.account
+        {
+            border: 1px solid rgba(255, 255, 255, 0.222);
+            transition: 0.5s ease-in-out;
+            height: 100%;
+        }
+        // NavBar Open
+        .navbar
+        {
+            z-index: 2;
+            padding: 0;
+            width: 20%;
+            img
+            {
+                border-radius: 50%;
+                height: 125px;
+                width: 125px;
+            }
+            .profile_info,.links
+            {
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.222);
+            }
+            .profile_info
+            {
+                height: 30%;
+            }
+            .links
+            {
+                height: 70%;
+                a
+                {
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.5s all;
+                    padding: 1em 1.5em;
+                    border-radius: 15px;
+                }
+                a:hover
+                {
+                    background-color: rgba(255, 255, 255, 0.074);
+                    border: 1px solid rgba(255, 255, 255, 0.222);
+                    backdrop-filter: blur(20px);
+                }
+            }
+        }
+        // Compte etudiant
+        .account
+        {
+            width: 80%;
+            .mail
+            {
+                margin: 0 auto;
+                span
+                {
+                    font-size: 1.2em;
+                    text-decoration: underline;
+                }
+            }
+            .new-doc
+            {
+                margin: 0 auto;
+                width: 20%;
+                cursor: pointer;
+                transition: 0.2s ease;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.074);
+                border: 1px solid rgba(255, 255, 255, 0.222);
+            }
+            .new-doc:hover
+            {
+                background-color: rgba(255, 255, 255, 0.074);
+                border: 1px solid rgba(255, 255, 255, 0.222);
+                backdrop-filter: blur(20px);
+            }
+            .first-part
+            {
+                height: 20%;
+            }
+            .second-part
+            {
+                height: 10%;
+                .status
+                {
+                    width: 35%;
+                    select
+                    {
+                        border-radius: 15px;
+                        option
+                        {
+                            background-color: black;
+                        }
+                        background: none;
+                    }
+                }
+                .periode
+                {
+                    width: 50%;
+                    input
+                    {
+                        border-radius: 15px;
+                        background: none;
+                    }
+                    .filtrer
+                    {
+                        background: none;
+                        padding: 0.5rem 1.5rem;
+                        transition: 0.2s all;
+                        border-radius: 15px;
+                        border: 2px solid white;
+                        &:hover
+                        {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .third-part
+            {
+                table
+                {
+                    display: block;
+                    height: 55vh;
+                    overflow: auto;
+                    a
+                    {
+                        color: white;
+                    }
+                }
+                tr,td
+                {
+                    width: 2%;
+                }
+            }
+        }
+        .menu
+        {
+            display: none;
+            cursor: pointer;
+            font-size: 2em;
+            border: none!important;
+            height: 5%;
+        }
+    }
+    // Media Queries
+    @media only screen and (max-width: 1230px)
+    {
+        .new-doc
+        {
+            width: 35%!important;
+        }
+    }
+    @media only screen and (max-width: 1200px)
+    {
+        .navbar
+        {
+            width: 30%!important;
+        }
+        .account
+        {
+            width: 70%!important;
+        }
+    }
+    @media only screen and (max-width: 849px)
+    {
+        .navbar
+        {
+            width: 0%!important;
+            display: none;
+        }
+        .menu
+        {
+            display: block!important;
+        }
+        .account
+        {
+            width: 100%!important;
+        }
+    }
+    @media only screen and (max-width: 568px)
+    {
+        .mail
+        {
+            padding: 3rem 0!important;
+            justify-content: space-around!important;
+        }
+        .new-doc
+        {
+            width: 50%!important;
+        }
+    }
+    @media only screen and (max-width: 568px)
+    {
+        .mail
+        {
+            padding: 0!important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly!important;
+            div
+            {
+                margin: 1rem auto;
+            }
+        }
+        .new-doc
+        {
+            margin: 3rem auto!important;
+            width: 50%!important;
+        }
+    }
+    @media only screen and (max-width: 397px)
+    {
+        .new-doc
+        {
+            width: 65%!important;
+        }
+    }

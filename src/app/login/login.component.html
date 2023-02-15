@@ -1,0 +1,46 @@
+<section
+  class="conteneur container-fluid d-flex align-items-center justify-content-center"
+>
+  <div class="right-side d-flex flex-column justify-content-center">
+    <article class="d-flex justify-content-center align-items-center my-3">
+      <h4>Se connecter</h4>
+    </article>
+    <article class="h-50 d-flex flex-column justify-content-evenly">
+      <div
+        class="h-75 inputs d-flex flex-column align-items-center justify-content-evenly"
+      >
+        <input
+          class="email w-75 p-2"
+          type="email"
+          placeholder="Adresse email"
+        />
+        <div
+          class="passContainer w-75 d-flex justify-content-between align-items-center"
+        >
+          <input
+            class="pass w-75 p-2"
+            type="password"
+            placeholder="Mot de passe"
+          />
+          <span class="password mx-3"><i class="fa fa-eye-slash"></i></span>
+        </div>
+      </div>
+      <div
+        class="validation h-auto p-2 d-flex justify-content-evenly align-items-center my-2"
+      >
+        <input
+          routerLink="../register"
+          class="btn btn-outline-light px-5 py-3"
+          type="button"
+          value="S'inscrire"
+        />
+        <input
+          routerLink="../account"
+          class="btn btn-outline-light px-5 py-3"
+          type="button"
+          value="Se connecter"
+        />
+      </div>
+    </article>
+  </div>
+</section>
